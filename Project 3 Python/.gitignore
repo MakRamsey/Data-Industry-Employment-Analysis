@@ -1,6 +1,12 @@
 #Ignore config file containing API code(s)
 api_key.py
+__pychache__/
+*.pyc
 
+#Ignore DS Store 
+*.DS_Store
 
+#Ignore gitignore
+*.gitignore
 
 
