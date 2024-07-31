@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Job Salary Dashboard</h1>
+
+        <div id="dropdown-container">
+            <div class="dropdown">
+                <label for="year-dropdown">Year:</label>
+                <select id="year-dropdown" onchange="optionChanged(this.value)"></select>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <h2>Top 10 Popular Roles by Year</h2>
+            <div id="top-roles-chart"></div>
+        </div>
+
+        <div class="chart-container">
+            <h2>Average Salary by Company Size and Experience Level</h2>
+            <div id="salary-chart"></div>
+        </div>
+
+        <div class="chart-container">
+            <h2>Top 5 Preferred Roles for Entry-Level Candidates</h2>
+            <div id="entry-level-chart"></div>
+        </div>
+
+        <div class="bubble-chart-container">
+            <h2>Bubble Chart - Job Titles by Company Location</h2>
+            <div class="dropdown">
+                <label for="location-dropdown">Location:</label>
+                <select id="location-dropdown"></select>
+            </div>
+            <div id="bubble-chart" class="bubble-chart"></div>
+        </div>
+    </div>
+
+    <!-- Include Plotly before your main.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
