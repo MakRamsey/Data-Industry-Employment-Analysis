@@ -131,7 +131,7 @@ Uncaptured Variables
 
 ### Repository Structure:
 
-⁃	“Project 3 Python” Directory
+“Project 3 Python” Directory
 
 •	“Project_3_AKKM.ipynb”: Executed Jupyter Notebook code file containing all Python analysis & visualizations
 
@@ -142,7 +142,7 @@ Uncaptured Variables
 •	“MongoDB_Imports”: Folder containing x15 visualization files (x5 .html & x10 .png)
 
 
-⁃	“Project 3 Javascript” Directory
+“Project 3 Javascript” Directory
 
 •	“index.html”: Webpage rendering of the Javascript dashboard leveraging both the .js and .css code files
 
@@ -153,7 +153,7 @@ Uncaptured Variables
 •	“salaries.json”: .json file of the salaries dataset utilized for the Javascript dashboard
 
 
-⁃	“Data Professionals Career Insights.pdf”
+“Data Professionals Career Insights.pdf”
 
 •	PDF file of opening slide deck for project presentation
 
