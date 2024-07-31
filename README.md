@@ -1,5 +1,5 @@
 # Project_3_MKKA
-Project Overview and Purpose:
+### Project Overview and Purpose:
 
 As every one of us in this class can agree, understanding the employment landscape of the Data Industry can be of vital importance when navigating prospects. For this project, our main aspiration was to analyze our dataset which consisted of anonymously sourced employment information for data professionals and provide some useful insight into the global Data marketplace.
 
@@ -19,12 +19,12 @@ What Salary Trends can we Identify?
 Given the analysis, does this data provide any useful insight as we all navigate our entrance into the world of data?
 
 
-Data Source Reference / Ethical Considerations:
+### Data Source Reference / Ethical Considerations:
 
 The chosen CC0: Public Domain dataset was identified on Kaggle from a page titled “AI/ML Salaries” posted by Cedric Aubin (https://www.kaggle.com/datasets/cedricaubin/ai-ml-salaries) and directly sourced from ai-jobs.net (https://aijobs.net/salaries/download/). The data represents the website’s global salary index and is “…based on internal data (survey submissions + jobs with open salaries). Salary data is in USD and recalculated at its average fx rate during the year for salaries entered in other currencies.” The data is updated weekly, contained 30,151 entries upon download for this project and was utilized as both .json and .csv filetypes. AI-jobs.net mentions the following regarding the ethical sourcing/considerations for this data, “We collect salary information anonymously from professionals and employers all over the world and make it publicly available for anyone to use, share and play around with. Our goal is to have open salary data for everyone. So newbies, experienced pros, hiring managers, recruiters and also startup founders or people wanting to switch careers can make better decisions.” It’s important to note that duplicates were specifically retained in the dataset to acknowledge the potential that repeat entries represented two distinct individuals with the same/similar employment.
 
 
-Database Creation, Hydration, Extraction & Cleaning / Transformation:
+### Database Creation, Hydration, Extraction & Cleaning / Transformation:
 
 Both filetypes were read into separate Pandas DataFrames to confirm dataset integrity/congruency and the CSV file was ultimately used to create/hydrate a local NoSQL database using MongoDB. A number of commands were subsequently performed using the PyMongo library to interface with our MongoDB database including a document count and entire dataset extraction/DataFrame generation.
 
@@ -37,7 +37,7 @@ Cleaning was then performed on the dataset. Columns ‘_id’, ‘salary’, and
 Final column renaming and rearranging of columns was executed and the resulting cleaned dataset CSV file was uploaded to the previously created local MongoDB database as a new collection named “salaries_cleaned”.
 
 
-Analysis / Visualizations:
+### Analysis / Visualizations:
 
 Python Components
 
@@ -104,7 +104,7 @@ Bubble Chart of Average Salaries for Job Titles by Specific Company Location
 ⁃	By visualizing the size and average salary of job listings within specific company locations, this chart is particularly useful for professionals seeking the highest-paying roles within a chosen country.
 
 
-Interaction Instructions for Project Visualizations:
+### Interaction Instructions for Project Visualizations:
 
 Part 1 - JavaScript Dashboard
 ⁃	Within the “Project 3 Javascript” directory of this repository is the four individual files required to generate the JavaScript Dashboard (“index.html”, “main.js”, “salaries.json”, “styles.css”). In order to run these files, please open a terminal window at the mentioned directory and run the following python server command: ‘python -m http.server 8000’. Subsequently, navigate to your Chrome browser and the address: ‘http://localhost:8000/', to generate the dashboard. The JavaScript Dashboard has two interactive components - The first of which is the year drop-down menu which filters all four visualizations by selected work year (2020 - 2024) while the second of which is  company location drop-drown menu that filters the fourth and final visualization reflecting the average salaries across individual job titles within different company locations.  
@@ -113,7 +113,7 @@ Part 2 - Python Visuals
 ⁃	Contained within the “Project 3 Python” directory of this repository is an executed Jupyter Notebook file titled “Project_3_AKKM.ipynb”. This file contains all executed Python code and can be opened for closer inspection and interactivity with a number of the salary distribution visualization. Please refer to the adjacent “Images” folder for .png and .html files representing all graphs - the .html files can be opened in a browser to allow interactivity as well.
 
 
-Limitations:
+### Limitations:
 
 Dataset Integrity
 ⁃	As with any dataset, it is important to acknowledge take special consideration for the means by which the data was collected. As mentioned earlier, this salary dataset was sourced from ai-jobs.net and more specifically represents the combined entries from self-reported and publicly available means. Both self-reported and publicly available data collection will always have the potential for inaccurate/biased data entry due to a variety of variables.
@@ -129,7 +129,7 @@ Uncaptured Variables
 ⁃	This initial dataset included the following metrics associated with each job entry: work_year, experience_level, experience_type, job_title, salary, salary_currency, salary_in_usd, employee_residence, remote_ratio, company_location & company_size. Naturally, there exists a plethora of other potential input variables associated with each job entry that could yield intriguing analysis. For example, employee age, education level, tenure in the data industry, etc. would be interesting to explore adding to the data capture process.
 
 
-Repository Structure:
+### Repository Structure:
 
 ⁃	“Project 3 Python” Directory
 •	“Project_3_AKKM.ipynb”: Executed Jupyter Notebook code file containing all Python analysis & visualizations
@@ -145,5 +145,4 @@ Repository Structure:
 
 ⁃	“Data Professionals Career Insights.pdf”
 •	PDF file of opening slide deck for project presentation
-
 
