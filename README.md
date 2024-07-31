@@ -133,27 +133,27 @@ Uncaptured Variables
 
 “Project 3 Python” Directory
 
-•	“Project_3_AKKM.ipynb”: Executed Jupyter Notebook code file containing all Python analysis & visualizations
+  •	“Project_3_AKKM.ipynb”: Executed Jupyter Notebook code file containing all Python analysis & visualizations
 
-•	“Resources”: Folder containing original ’salaries.csv’, ‘salaries.json’ and cleaned ‘salaries_cleaned.csv’ files
+  •	“Resources”: Folder containing original ’salaries.csv’, ‘salaries.json’ and cleaned ‘salaries_cleaned.csv’ files
 
-•	“Images”: Folder containing all generated Python visualizations as .png and .html files
+  •	“Images”: Folder containing all generated Python visualizations as .png and .html files
 
-•	“MongoDB_Imports”: Folder containing x15 visualization files (x5 .html & x10 .png)
+  •	“MongoDB_Imports”: Folder containing x15 visualization files (x5 .html & x10 .png)
 
 
 “Project 3 Javascript” Directory
 
-•	“index.html”: Webpage rendering of the Javascript dashboard leveraging both the .js and .css code files
+  •	“index.html”: Webpage rendering of the Javascript dashboard leveraging both the .js and .css code files
 
-•	“main.js”: Primary javascript code file for the Javascript dashboard
+  •	“main.js”: Primary javascript code file for the Javascript dashboard
 
-•	“styles.css”: Cascading Style Sheet code for the Javascript dashboard
+  •	“styles.css”: Cascading Style Sheet code for the Javascript dashboard
 
-•	“salaries.json”: .json file of the salaries dataset utilized for the Javascript dashboard
+  •	“salaries.json”: .json file of the salaries dataset utilized for the Javascript dashboard
 
 
 “Data Professionals Career Insights.pdf”
 
-•	PDF file of opening slide deck for project presentation
+  •	PDF file of opening slide deck for project presentation
 
