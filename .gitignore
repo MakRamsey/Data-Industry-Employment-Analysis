@@ -3,10 +3,9 @@ api_key.py
 __pychache__/
 *.pyc
 
-#Ignore DS Store 
-*.DS_Store
+# Ignore .DS_Store & .ipynb_checkpoints
+**/.DS_Store
+**/.ipynb_checkpoints
 
-#Ignore gitignore
-*.gitignore
 
 
