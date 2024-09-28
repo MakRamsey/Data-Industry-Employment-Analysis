@@ -1,4 +1,5 @@
-# Project_3_MKKA
+# Data-Industry-Employment-Analysis
+
 ### Project Overview and Purpose:
 
 As every one of us in this class can agree, understanding the employment landscape of the Data Industry can be of vital importance when navigating prospects. For this project, our main aspiration was to analyze our dataset which consisted of anonymously sourced employment information for data professionals and provide some useful insight into the global Data marketplace.
@@ -39,7 +40,7 @@ Final column renaming and rearranging of columns was executed and the resulting 
 
 ### Analysis / Visualizations:
 
-Python Components
+**Python Components**
 
 Analysis and visualization was then carried out with the use of Pandas, Requests/JSON, Hvplots, Matplotlib, Plotly, Seaborn, Panel, Geoapaify API, etc. Specific areas of interest include:
 ⁃	Global Salary Distribution and Growth Over Time
@@ -81,7 +82,7 @@ Analysis and visualization was then carried out with the use of Pandas, Requests
 •	Average salaries for each remote ratio group were as follows: $160,270.57 for 0% remote ratio (Fully On-Site), $148,237.01 for 100% remote ratio (Fully Remote) and $82,145.10 for 50% remote ratio (Hybrid).
 •	A detailed histogram of salary distribution within each experience level group is provided for further analysis.
 
-JavaScript Dashboard Components
+**JavaScript Dashboard Components**
 
 Top 10 Popular Roles by Year
 ⁃	Description: This bar chart illustrates the top 10 job roles for a selected year based on their frequency in the dataset. It highlights which roles were most popular in any given year.
@@ -106,54 +107,47 @@ Bubble Chart of Average Salaries for Job Titles by Specific Company Location
 
 ### Interaction Instructions for Project Visualizations:
 
-Part 1 - JavaScript Dashboard
+**Part 1 - JavaScript Dashboard**
+
 ⁃	Within the “Project 3 Javascript” directory of this repository is the four individual files required to generate the JavaScript Dashboard (“index.html”, “main.js”, “salaries.json”, “styles.css”). In order to run these files, please open a terminal window at the mentioned directory and run the following python server command: ‘python -m http.server 8000’. Subsequently, navigate to your Chrome browser and the address: ‘http://localhost:8000/', to generate the dashboard. The JavaScript Dashboard has two interactive components - The first of which is the year drop-down menu which filters all four visualizations by selected work year (2020 - 2024) while the second of which is  company location drop-drown menu that filters the fourth and final visualization reflecting the average salaries across individual job titles within different company locations.  
 
-Part 2 - Python Visuals
+**Part 2 - Python Visuals**
+
 ⁃	Contained within the “Project 3 Python” directory of this repository is an executed Jupyter Notebook file titled “Project_3_AKKM.ipynb”. This file contains all executed Python code and can be opened for closer inspection and interactivity with a number of the salary distribution visualization. Please refer to the adjacent “Images” folder for .png and .html files representing all graphs - the .html files can be opened in a browser to allow interactivity as well.
 
 
 ### Limitations:
 
-Dataset Integrity
+**Dataset Integrity**
+
 ⁃	As with any dataset, it is important to acknowledge take special consideration for the means by which the data was collected. As mentioned earlier, this salary dataset was sourced from ai-jobs.net and more specifically represents the combined entries from self-reported and publicly available means. Both self-reported and publicly available data collection will always have the potential for inaccurate/biased data entry due to a variety of variables.
 
-Sample Size Discrepancy
+**Sample Size Discrepancy**
+
 ⁃	Consistently noted throughout our analysis is the significant sample size discrepancy in regards to country specific data. The dataset utilized throughout this project contained 30,151 entries with more than 97% of those being attributed to only 5 countries (out of 80 countries represented). As such, special consideration  should be given when examining salary aggregates grouped by countries. For example, while Qatar does indeed have the highest average salary within the dataset, that aggregate is derived from the single job within the dataset belonging to Qatar that pays $300,000.00. As the database continues to grow/evolve over time and capture more country specific representative datapoints, the ability to glean impactful country specific insights will inevitably increase. In the future and with enough datapoints for each country, randomized sampling could be employed.
 ⁃	Overall, the world of data and the number of employment opportunities within the industry obviously far exceeds the 30,151 datapoints within the analyzed dataset. With more data and better representative data, more and better analysis is possible.
 
-Normalization
+**Normalization**
+
 ⁃	One particular area that could benefit from normalization would be the position title category. As each individual company is going to have unique job titles that are completely different from the next, the title value inevitably looses some ability to extract meaningful insight. One potential idea would be to normalize job titles via a large-language-model that digests the textural data associated with each title’s description and subsequently sorts each entry into a predetermined title grouping for future analysis.
 
-Uncaptured Variables
+**Uncaptured Variables**
+
 ⁃	This initial dataset included the following metrics associated with each job entry: work_year, experience_level, experience_type, job_title, salary, salary_currency, salary_in_usd, employee_residence, remote_ratio, company_location & company_size. Naturally, there exists a plethora of other potential input variables associated with each job entry that could yield intriguing analysis. For example, employee age, education level, tenure in the data industry, etc. would be interesting to explore adding to the data capture process.
 
 
 ### Repository Structure:
 
----“Project 3 Python” Directory
+- 'Project 3 Javascript' directory:
+  - “index.html”: Webpage rendering of the Javascript dashboard leveraging both the .js ("main.js") and .css ("styles.css") code files
+  - “main.js”: Primary javascript code file for the Javascript dashboard
+  - “salaries.json”: JSON file of the salaries dataset utilized for the Javascript dashboard
+  - “styles.css”: Cascading Style Sheet code for the Javascript dashboard
 
-  •	“Project_3_AKKM.ipynb”: Executed Jupyter Notebook code file containing all Python analysis & visualizations
+- 'Project 3 Python' directory:
+  - 'Images' directory: Contains all Python generated visualizations as .png and .html files
+  - 'Resources': Folder containing original "salaries.css", "salaries.json" and cleaned "salaries_cleaned.csv" files
+  - “Project_3_AKKM.ipynb”: Executed Jupyter Notebook code file containing Python analysis & visualizations
 
-  •	“Resources”: Folder containing original ’salaries.csv’, ‘salaries.json’ and cleaned ‘salaries_cleaned.csv’ files
-
-  •	“Images”: Folder containing all generated Python visualizations as .png and .html files
-
-  •	“MongoDB_Imports”: Folder containing x15 visualization files (x5 .html & x10 .png)
-
-
----“Project 3 Javascript” Directory
-
-  •	“index.html”: Webpage rendering of the Javascript dashboard leveraging both the .js and .css code files
-
-  •	“main.js”: Primary javascript code file for the Javascript dashboard
-
-  •	“styles.css”: Cascading Style Sheet code for the Javascript dashboard
-
-  •	“salaries.json”: .json file of the salaries dataset utilized for the Javascript dashboard
-
-
----“Data Professionals Career Insights.pdf”
-
-  •	PDF file of opening slide deck for project presentation
+- “Data Professionals Career Insights.pdf”: PDF file of opening slide deck for project presentation
 
